@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChicBoutique - Checkout</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">ChicBoutique</a>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span></span>
+                </label>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="cart.html">Cart (3)</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="checkout.html" class="btn active">Checkout</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <div class="page">
+            <h2 class="page-title">Checkout</h2>
+            <div class="form-container">
+                <form action="#" method="post">
+                    
+                    <fieldset>
+                        <legend>Shipping Address</legend>
+                        <div class="form-grid grid-col-2">
+                            <div class="form-group span-col-2">
+                                <label for="checkout-name">Full Name</label>
+                                <input type="text" id="checkout-name" name="checkout-name" required>
+                            </div>
+                            <div class="form-group span-col-2">
+                                <label for="address1">Address Line 1</label>
+                                <input type="text" id="address1" name="address1" required>
+                            </div>
+                            <div class="form-group span-col-2">
+                                <label for="address2">Address Line 2 (Optional)</label>
+                                <input type="text" id="address2" name="address2">
+                            </div>
+                            <div class="form-group">
+                                <label for="city">City</label>
+                                <input type="text" id="city" name="city" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="state">State / Province</label>
+                                <input type="text" id="state" name="state" required>
+                            </div>
+                             <div class="form-group">
+                                <label for="zip">Zip / Postal Code</label>
+                                <input type="text" id="zip" name="zip" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="country">Country</label>
+                                <select id="country" name="country">
+                                    <option>United States</option>
+                                    <option>Canada</option>
+                                    <option>United Kingdom</option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Payment Information</legend>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="card-number">Card Number</label>
+                                <input type="text" id="card-number" name="card-number" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+                            </div>
+                            <div class="form-grid grid-col-2">
+                                <div class="form-group">
+                                    <label for="expiry">Expiry Date</label>
+                                    <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="cvc">CVC</label>
+                                    <input type="text" id="cvc" name="cvc" placeholder="123" required>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <button type="submit" class="btn" style="width: 100%; font-size: 1.25rem; margin-top: 1rem;">Place Order</button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 ChicBoutique. All rights reserved.</p>
+        <p>A static HTML & CSS demo website.</p>
+    </footer>
+
+</body>
+</html>

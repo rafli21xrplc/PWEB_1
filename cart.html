@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChicBoutique - Shopping Cart</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">ChicBoutique</a>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span></span>
+                </label>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="cart.html" class="active">Cart (3)</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="checkout.html" class="btn" style="color: white;">Checkout</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <div class="page">
+            <h2 class="page-title">Your Shopping Cart</h2>
+            
+            <div class="cart-items-list">
+                <div class="cart-item">
+                    <img src="https://placehold.co/200x200/007bff/white?text=Modern+Chair" alt="Modern Chair">
+                    <div class="cart-item-info">
+                        <h3>Modern Chair</h3>
+                        <p class="price">$149.99</p>
+                        <a href="#" class="cart-item-actions">Remove</a>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <img src="https://placehold.co/200x200/28a745/white?text=Minimalist+Lamp" alt="Minimalist Lamp">
+                    <div class="cart-item-info">
+                        <h3>Minimalist Lamp</h3>
+                        <p class="price">$79.99</p>
+                        <a href="#" class="cart-item-actions">Remove</a>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <img src="https://placehold.co/200x200/ffc107/black?text=Coffee+Table" alt="Coffee Table">
+                    <div class="cart-item-info">
+                        <h3>Coffee Table</h3>
+                        <p class="price">$229.99</p>
+                        <a href="#" class="cart-item-actions">Remove</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cart-summary">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span>$459.97</span>
+                </div>
+                <a href="checkout.html" class="btn" style="width: 100%; font-size: 1.25rem;">Proceed to Checkout</a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 ChicBoutique. All rights reserved.</p>
+        <p>A static HTML & CSS demo website.</p>
+    </footer>
+
+</body>
+</html>
